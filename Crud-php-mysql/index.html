@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OdontoPro - Clínica Dental de Vanguardia</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/test.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+
+    <div class="top-bar">
+    <div class="top-bar-content">
+            <div class="contact-info">
+                <span><i class="fas fa-map-marker-alt"></i> Carrera 45 # 67-89, Bogotá, Colombia</span>
+                <span><i class="fas fa-envelope"></i> ODONTOPRO@GMAIL.COM</span>
+            </div>
+            <div class="language-selector">
+                <div class="language-flags">
+                    <img src="https://flagcdn.com/w20/us.png" alt="English" class="flag-icon" data-lang="en">
+                    <img src="https://flagcdn.com/w20/co.png" alt="Español" class="flag-icon" data-lang="es">
+                </div>
+            </div>
+        </div>
+    </div>
+
+<nav class="main-nav">
+    <div class="nav-content container">
+        <a href="#" class="logo">
+            OdontoPro
+        </a>
+        <ul class="nav-links">
+            <li><a href="#" data-i18n-key="nav_inicio">Inicio</a></li>
+            <li><a href="#" data-i18n-key="nav_servicios">Servicios</a> <i class="fas fa-chevron-down"></i></li>
+            <li><a href="#" data-i18n-key="nav_testimonios">Testimonios</a></li>
+            <li><a href="#" data-i18n-key="nav_blog">Blog</a></li>
+            <li><a href="#" data-i18n-key="nav_nosotros">Sobre Nosotros</a></li>
+            <li><a href="#" data-i18n-key="nav_contacto">Contáctanos</a></li>
+        </ul>
+    </div>
+</nav>
+
+    <section class="hero-section">
+        <div class="container hero-content">
+            <h1 data-i18n-key="hero_titulo">La clave para<br>aclarar tu sonrisa</h1>
+            <a href="#" class="btn-primary" data-i18n-key="hero_boton">AGENDA TU CITA AHORA</a>
+        </div>
+    </section>
+
+    <div class="container main-content">
+        <section class="info-section">
+            <h2 data-i18n-key="servicios_titulo">Nuestros Servicios Destacados</h2>
+            <p data-i18n-key="servicios_descripcion">Descubre cómo OdontoPro puede transformar tu salud bucal con tratamientos personalizados.</p>
+            <div class="service-item">
+                <div class="text-content">
+                    <h3 data-i18n-key="blanqueamiento_titulo">Blanqueamiento Dental</h3>
+                    <p data-i18n-key="blanqueamiento_parrafo1">El blanqueamiento dental es uno de los tratamientos estéticos más populares para aquellos que desean eliminar manchas y pigmentaciones, devolviendo a sus dientes un aspecto luminoso y saludable.</p>
+                    <p data-i18n-key="blanqueamiento_parrafo2">¿Qué es el Blanqueamiento Dental? Es un tratamiento estético rápido y efectivo cuyo objetivo es aclarar el color de los dientes.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://fame.codecastle.dev/wp-content/uploads/2024/08/Blanqueamiento-Dental-Antes-FAME-Dental-Studio-scaled.webp" alt="Blanqueamiento Dental Antes y Después">
+                </div>
+            </div>
+            
+            <div class="service-item reverse">
+                <div class="text-content">
+                    <h3 data-i18n-key="implantes_titulo">Implantes Dentales</h3>
+                    <p data-i18n-key="implantes_parrafo1">Los implantes dentales son la solución más avanzada y duradera para reemplazar dientes perdidos. Recupera la función y estética de tu sonrisa.</p>
+                    <p data-i18n-key="implantes_parrafo2">Te ofrecemos un estudio personalizado y un procedimiento seguro para garantizar los mejores resultados.</p>
+                </div>
+                <div class="image-content">
+                    <img src="https://via.placeholder.com/400x300?text=Implantes+Dentales" alt="Implantes Dentales">
+                </div>
+            </div>
+        </section>
+
+        <section class="contact-form-section">
+            <div class="text-side">
+                <h2 data-i18n-key="formulario_titulo">Solicitar consulta</h2>
+                <p data-i18n-key="formulario_parrafo">¡Tu sonrisa merece el mejor cuidado! Reserva tu cita con nuestros especialistas.</p>
+            </div>
+            <div class="form-side">
+                <form action="#" method="POST">
+                    <div class="form-group">
+                        <label for="name" data-i18n-key="form_nombre">NOMBRE*</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone" data-i18n-key="form_telefono">TELÉFONO</label>
+                        <input type="tel" id="phone" name="phone">
+                    </div>
+                    <div class="form-group">
+                        <label for="country" data-i18n-key="form_pais">PAÍS/REGIÓN*</label>
+                        <input type="text" id="country" name="country" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email" data-i18n-key="form_email">CORREO ELECTRÓNICO</label>
+                        <input type="email" id="email" name="email">
+                    </div>
+                    <div class="form-group">
+                        <label for="message" data-i18n-key="form_mensaje">MENSAJE*</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-submit" data-i18n-key="form_boton_solicitar">Solicitar</button>
+                </form>
+            </div>
+        </section>
+    </div>
+
+    <a href="https://wa.me/3102503148" class="whatsapp-float" target="_blank">
+        <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <footer>
+        <div class="container">
+            <p data-i18n-key="footer_derechos">&copy; 2025 OdontoPro. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="js/i18n.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,456 @@
+/* Importar fuentes de Google Fonts (Playfair Display para títulos, Open Sans para texto general) */
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&family=Open+Sans:wght@400;600&display=swap');
+
+/* Estilos Generales */
+body {
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #1b2a41;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+h1 {
+    font-size: 3.5em;
+    color: #fff;
+    line-height: 1.1;
+}
+
+h2 {
+    font-size: 2.5em;
+    text-align: center;
+    margin-bottom: 40px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+h2::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 60px;
+    height: 3px;
+    background-color: #f7d291;
+    border-radius: 5px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+/* Barra Superior */
+.top-bar {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 10px 0;
+    font-size: 0.85em;
+}
+
+.top-bar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.top-bar .contact-info span {
+    margin-right: 20px;
+}
+
+.top-bar .contact-info i {
+    margin-right: 5px;
+    color: #f7d291;
+}
+
+.language-selector span {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.language-selector i {
+    margin-left: 5px;
+}
+
+/* Navegación Principal */
+.main-nav {
+    background-color: #fff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border-bottom: 1px solid #f7d291; /* Borde dorado inferior */
+}
+
+.nav-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+}
+
+.logo {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.8em;
+    font-weight: bold;
+    color: #2c3e50;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    height: 40px;
+    margin-right: 10px;
+}
+
+.nav-links {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-links li {
+    margin-left: 30px;
+    position: relative;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 600;
+    padding: 5px 0;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #f7d291;
+}
+
+.nav-links i {
+    font-size: 0.7em;
+    margin-left: 5px;
+    color: #888;
+}
+
+/* Sección Héroe */
+.hero-section {
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('hero_background.jpg') center/cover no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 100px 20px;
+    min-height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content h1 {
+    font-size: 4em;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+    display: inline-block;
+    background-color: #f7d291;
+    color: #333;
+    padding: 15px 35px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 1.1em;
+    text-transform: uppercase;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn-primary:hover {
+    background-color: #e0b875;
+    transform: translateY(-2px);
+}
+
+/* Contenido Principal (donde irán las secciones como servicios y contacto) */
+.main-content {
+    padding: 60px 20px;
+    background-color: #fff;
+    margin-top: 30px;
+    border-radius: 8px;
+    border: none; /* Quitamos el borde */
+    box-shadow: 0 0 15px rgba(247, 210, 145, 0.7); /* Sombra dorada suave */
+}
+
+/* Secciones de Información y Servicios (Layout de 2 columnas) */
+.info-section {
+    margin-bottom: 60px;
+}
+
+.service-item {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 60px;
+    background-color: #fdfdfd;
+    padding: 30px;
+    border-radius: 8px;
+    border: none; /* Quitamos el borde */
+    box-shadow: 0 0 10px rgba(247, 210, 145, 0.5); /* Sombra dorada suave */
+}
+
+.service-item.reverse {
+    flex-direction: row-reverse;
+}
+
+.service-item .text-content {
+    flex: 1;
+}
+
+.service-item .text-content h3 {
+    font-size: 1.8em;
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+.service-item .image-content {
+    flex: 1;
+    text-align: center;
+}
+
+.service-item .image-content img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+/* Sección de Formulario de Contacto */
+.contact-form-section {
+    display: flex;
+    background-color: #f4f4f4;
+    border-radius: 8px;
+    overflow: hidden;
+    margin-bottom: 60px;
+    border: none; /* Quitamos el borde */
+    box-shadow: 0 0 20px rgba(247, 210, 145, 0.8); /* Sombra dorada más intensa */
+}
+
+.contact-form-section .text-side {
+    flex: 1;
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.contact-form-section .text-side h2 {
+    color: #fff;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+.contact-form-section .text-side p {
+    color: #f0f0f0;
+    font-size: 1.1em;
+}
+
+.contact-form-section .form-side {
+    flex: 1;
+    padding: 50px;
+    background-color: #fff;
+}
+
+.contact-form-section form {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.form-group {
+    position: relative;
+}
+
+.form-group label {
+    display: block;
+    font-size: 0.9em;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="tel"],
+.form-group input[type="email"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px 0;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background: transparent;
+    font-size: 1em;
+    color: #333;
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #f7d291;
+    outline: none;
+}
+
+.form-group input::placeholder,
+.form-group textarea::placeholder {
+    color: #aaa;
+}
+
+.btn-submit {
+    background-color: #f7d291;
+    color: #333;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1.1em;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1);
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.btn-submit:hover {
+    background-color: #e0b875;
+    transform: translateY(-1px);
+}
+
+/* Pie de página */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 30px 0;
+    font-size: 0.9em;
+    margin-top: 50px;
+}
+
+/* Botón Flotante de WhatsApp */
+.whatsapp-float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 30px;
+    right: 30px;
+    background-color: #25d366;
+    color: #fff;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 28px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.whatsapp-float:hover {
+    background-color: #1DA851;
+    transform: scale(1.05);
+}
+
+/* Media Queries para responsividad */
+@media (max-width: 992px) {
+    .container {
+        padding: 0 15px;
+    }
+    h1 {
+        font-size: 3em;
+    }
+    .top-bar-content {
+        flex-direction: column;
+        text-align: center;
+    }
+    .top-bar .contact-info span {
+        margin: 5px 0;
+    }
+    .nav-content {
+        flex-direction: column;
+    }
+    .nav-links {
+        flex-direction: column;
+        width: 100%;
+        margin-top: 20px;
+    }
+    .nav-links li {
+        margin: 10px 0;
+        text-align: center;
+    }
+    .hero-section {
+        padding: 80px 20px;
+    }
+    .service-item, .service-item.reverse {
+        flex-direction: column;
+        text-align: center;
+    }
+    .contact-form-section {
+        flex-direction: column;
+    }
+    .contact-form-section .text-side,
+    .contact-form-section .form-side {
+        padding: 30px;
+    }
+    .btn-submit {
+        align-self: center;
+    }
+}
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2.5em;
+    }
+    h2 {
+        font-size: 2em;
+    }
+    .btn-primary {
+        padding: 12px 25px;
+        font-size: 1em;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 2em;
+    }
+    h2 {
+        font-size: 1.8em;
+    }
+    .hero-section {
+        padding: 60px 15px;
+        min-height: 300px;
+    }
+    .whatsapp-float {
+        width: 50px;
+        height: 50px;
+        font-size: 24px;
+        bottom: 20px;
+        right: 20px;
+    }
+}
